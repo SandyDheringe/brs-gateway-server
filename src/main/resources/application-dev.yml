@@ -2,7 +2,6 @@
 spring:
   application:
     name: brs-gateway-server
-  profiles:
-    active: dev
+
   config:
     import: configserver:http://localhost:8071
