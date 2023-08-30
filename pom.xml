@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.brsgatewayserver</groupId>
     <artifactId>brs-gateway-server</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>brs-gateway-server</name>
     <description>brs-gateway-server</description>
     <properties>
