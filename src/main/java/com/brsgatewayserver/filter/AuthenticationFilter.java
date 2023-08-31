@@ -1,5 +1,6 @@
 package com.brsgatewayserver.filter;
 
+import com.brsgatewayserver.exception.BRSUnauthorizedException;
 import com.brsgatewayserver.util.JwtUtil;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
@@ -41,7 +42,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
 
                 } catch (Exception e) {
                     System.out.println("invalid access...!");
-                    throw new RuntimeException("un authorized access to application");
+                    throw new BRSUnauthorizedException("Unautherized to access the application");
                 }
             }
             return chain.filter(exchange);

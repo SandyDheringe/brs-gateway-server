@@ -11,7 +11,7 @@ public class BrsGatewayServerApplication {
 //        SpringApplication.run(BrsGatewayServerApplication.class, args);
 
         new SpringApplicationBuilder()
-                .profiles("dev")
+                .profiles("prod")
                 .sources(BrsGatewayServerApplication.class)
                 .run(args);
     }
